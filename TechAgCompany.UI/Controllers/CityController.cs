@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TechAgCompany.Entities;
 using TechAgCompany.Repository.Interfaces;
+using TechAgCompany.UI.ViewModel.CityViewModel;
 
 namespace TechAgCompany.UI.Controllers
 {
@@ -19,7 +20,13 @@ namespace TechAgCompany.UI.Controllers
         public IActionResult Index()
         {
            var city= _cityrepos.GetAll();
-            return View(city);
+            var cvm = new List<CityViewmodel>();
+            foreach(var citya in city)
+            {
+                cvm.Add(new CityViewmodel { Id= citya.Id,CityName= citya.Name,StateName=citya.StateName.Name,
+                CountryName=citya.StateName.CountryName.Name});
+            }
+            return View(cvm);
         }
         [HttpGet]
         public IActionResult Create()
@@ -29,8 +36,13 @@ namespace TechAgCompany.UI.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(City city)
+        public IActionResult Create(CreateCityViewModel cvm)
         {
+            City city = new City()
+            {
+                Name=cvm.cityName,
+                StateId=cvm.StateId
+            };
             _cityrepos.save(city);
             return RedirectToAction("Index");
         }
