@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Techaagcompany.web/bin/Debug/net7.0
+/Techaagcompany.web/obj/Debug/net7.0
+/TechAgCompany.Entities/obj/Debug/net7.0
+/TechAgCompany.Entities/bin/Debug/net7.0
+/TechAgCompany.Repository/bin/Debug/net7.0
+/TechAgCompany.UI/bin/Debug/net7.0
+/TechAgCompany.UI/obj/Debug/net7.0
+/TechAgCompany.Repository/obj/Debug/net7.0
