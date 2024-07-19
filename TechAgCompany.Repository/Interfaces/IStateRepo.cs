@@ -16,8 +16,5 @@ namespace TechAgCompany.Repository.Interfaces
         void Edit(State state);
         void RemoveData(State state);
 
-        void RemoveData(State state);
-        void RemoveData(State state);
-
     }
 }
