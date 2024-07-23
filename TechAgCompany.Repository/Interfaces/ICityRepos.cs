@@ -9,11 +9,11 @@ namespace TechAgCompany.Repository.Interfaces
 {
     public interface ICityRepos
     {
-        IEnumerable<City> GetAll();
-        City GetById(int id);
+        Task <IEnumerable<City>> GetAll();
+        Task<City> GetById(int id);
 
-        void save(City city);
-        void Edit(City city);
-        void RemoveData(City city);
+        Task save(City city);
+        Task Edit(City city);
+        Task RemoveData(City city);
     }
 }

@@ -18,36 +18,36 @@ namespace TechAgCompany.Repository.Implementation
             _context = context;
         }
 
-        public void Edit(State state)
+        public async Task Edit(State state)
         {
-            _context.states.Update(state);
-            _context.SaveChanges();
+             _context.states.Update(state);
+           await _context.SaveChangesAsync();
             
         }
 
-        public IEnumerable<State> GetAll()
+        public async Task<IEnumerable<State>> GetAll()
         {
-            var state = _context.states.Include(x=>x.CountryName).ToList();
+            var state = await _context.states.Include(x => x.CountryName).ToListAsync();
             return state;
             
         }
 
-       public State GetById(int id)
+       public async Task<State> GetById(int id)
         {
-            var state = _context.states.Find(id);
+            var state =await _context.states.FindAsync(id);
             return state;
         }
 
-        public void RemoveData(State state)
+        public async Task RemoveData(State state)
         {
              _context.states.Remove(state);
-            _context.SaveChanges();
+           await _context.SaveChangesAsync();
         }
 
-        public void save(State state)
+        public async Task save(State state)
         {
-            _context.states.Add(state);
-            _context.SaveChanges();
+             await _context.states.AddAsync(state);
+            await _context.SaveChangesAsync();
         }
 
     }

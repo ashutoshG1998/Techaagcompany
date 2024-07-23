@@ -18,34 +18,34 @@ namespace TechAgCompany.Repository.Implementation
             _context = context;
         }
 
-        public void Edit(City city)
+        public async Task Edit(City city)
         {
           _context.citys.Update(city);
-          _context.SaveChanges();
+          await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<City> GetAll()
+        public async Task<IEnumerable<City>> GetAll()
         {
-            var city=_context.citys.Include(x=>x.StateName).ThenInclude(y=>y.CountryName).ToList();
+            var city=await _context.citys.Include(x=>x.StateName).ThenInclude(y=>y.CountryName).ToListAsync();
             return city ;
         }
 
-        public City GetById(int id)
+        public async Task<City> GetById(int id)
         {
-            var city=_context.citys.Find(id);
+            var city= await _context.citys.FindAsync(id);
             return city;
         }
 
-        public void RemoveData(City city)
+        public async Task RemoveData(City city)
         {
            _context.citys.Remove(city);
-            _context.SaveChanges();
+           await _context.SaveChangesAsync();
         }
 
-        public void save(City city)
+        public async Task save(City city)
         {
-           _context.citys.Add(city);
-            _context.SaveChanges();
+          await _context.citys.AddAsync(city);
+           await _context.SaveChangesAsync();
         }
     }
 }

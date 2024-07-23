@@ -9,11 +9,12 @@ namespace TechAgCompany.Repository.Interfaces
 {
     public interface IcountryRepos
     {
-        IEnumerable<Country> GetAll();
-        Country GetById(int id);    
+        Task<IEnumerable<Country>> GetAll();
+        
+        Task<Country> GetById(int id);    
 
-        void save(Country country);
-        void Edit(Country country);
-        void RemoveData(Country country);
+        Task save(Country country);
+        Task Edit(Country country);
+        Task RemoveData(Country country);
     }
 }

@@ -9,12 +9,11 @@ namespace TechAgCompany.Repository.Interfaces
 {
     public interface IStateRepo
     {
-        IEnumerable<State> GetAll();
-        State GetById(int id);
-
-        void save(State state);
-        void Edit(State state);
-        void RemoveData(State state);
+        Task <IEnumerable<State>> GetAll();
+        Task <State> GetById(int id);
+        Task save(State state);
+        Task Edit(State state);
+        Task RemoveData(State state);
         //istate
 
     }

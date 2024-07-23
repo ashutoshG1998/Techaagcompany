@@ -17,9 +17,9 @@ namespace TechAgCompany.UI.Controllers
             _staterepos = staterepos;
         }
 
-        public IActionResult Index()
+        public async Task <IActionResult> Index()
         {
-           var city= _cityrepos.GetAll();
+           var city= await _cityrepos.GetAll();
             var cvm = new List<CityViewmodel>();
             foreach(var citya in city)
             {
@@ -29,47 +29,47 @@ namespace TechAgCompany.UI.Controllers
             return View(cvm);
         }
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            var state= _staterepos.GetAll();
+            var state=await _staterepos.GetAll();
             ViewBag.StateList = new SelectList(state, "Id", "Name");
             return View();
         }
         [HttpPost]
-        public IActionResult Create(CreateCityViewModel cvm)
+        public async Task<IActionResult> Create(CreateCityViewModel cvm)
         {
             City city = new City()
             {
                 Name=cvm.cityName,
                 StateId=cvm.StateId
             };
-            _cityrepos.save(city);
+            await _cityrepos.save(city);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var city= _cityrepos.GetById(id);
-            var state = _staterepos.GetAll();
+            var city= await _cityrepos.GetById(id);
+            var state =await _staterepos.GetAll();
             ViewBag.StateList = new SelectList(state, "Id", "Name");
             return View(city);
         }
         [HttpPost]
-        public IActionResult Edit(City city)
+        public async Task<IActionResult>  Edit(City city)
         {
-            _cityrepos.Edit(city);
+            await _cityrepos.Edit(city);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult>  Delete(int id)
         {
-           var cityD= _cityrepos.GetById(id);
+           var cityD= await _cityrepos.GetById(id);
             return View(cityD) ;
         }
         [HttpPost]
-        public IActionResult Delete(City city)
+        public async Task<IActionResult> Delete(City city)
         {
-            _cityrepos.RemoveData(city);
+            await _cityrepos.RemoveData(city);
             return RedirectToAction("Index");
         }
     }

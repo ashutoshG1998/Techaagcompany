@@ -14,10 +14,10 @@ namespace TechAgCompany.UI.Controllers
             _icountryRepos = icountryRepos;
         }
 
-        public IActionResult Index()
+        public async Task <IActionResult> Index()
         {
             List<CountryViewModel> cvm = new List<CountryViewModel>();
-            var countries = _icountryRepos.GetAll();
+            var countries = await _icountryRepos.GetAll();
 
             foreach (var country in countries)
             {
@@ -26,26 +26,26 @@ namespace TechAgCompany.UI.Controllers
             return View(cvm);
         }
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
             //Country country = new Country();
             CreateCountryviewmodel country = new CreateCountryviewmodel();
             return View(country);
         }
         [HttpPost]
-        public IActionResult Create(CreateCountryviewmodel vm)
+        public async Task<IActionResult> Create(CreateCountryviewmodel vm)
         {
             var country = new Country
             {
                 Name = vm.Name
             };
-            _icountryRepos.save(country);
+            await _icountryRepos.save(country);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var country = _icountryRepos.GetById(id);
+            var country = await _icountryRepos.GetById(id);
             CountryViewModel cvm = new CountryViewModel()
             {
                 Id = country.Id,
@@ -55,26 +55,26 @@ namespace TechAgCompany.UI.Controllers
             return View(cvm);
         }
         [HttpPost]
-        public IActionResult Edit(CountryViewModel vm)
+        public async Task<IActionResult> Edit(CountryViewModel vm)
         {
             Country country = new Country()
             {
                 Id = vm.Id,
                 Name = vm.Name
             };
-            _icountryRepos.Edit(country);
+            await _icountryRepos.Edit(country);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var country = _icountryRepos.GetById(id);
+            var country = await _icountryRepos.GetById(id);
             return View(country);
         }
         [HttpPost]
-        public IActionResult Delete(Country country)
+        public async Task<IActionResult> Delete(Country country)
         {
-            _icountryRepos.RemoveData(country);
+            await _icountryRepos.RemoveData(country);
             return RedirectToAction("Index");
         }
     }

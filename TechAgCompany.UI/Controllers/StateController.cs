@@ -19,9 +19,9 @@ namespace TechAgCompany.UI.Controllers
             _icountryRepos = icountryRepos;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult>Index()
         {
-            var state=_stateRepo.GetAll();
+            var state=await _stateRepo.GetAll();
             List<StateViewmodel> svm = new List<StateViewmodel>();
             foreach(var stname in state)
             {
@@ -30,29 +30,29 @@ namespace TechAgCompany.UI.Controllers
             return View(svm);
         }
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult>  Create()
         {
             
-            var country= _icountryRepos.GetAll();
+            var country= await _icountryRepos.GetAll();
             ViewBag.CountryList = new SelectList(country,"Id", "Name");
             return View();
         }
         [HttpPost]
-        public IActionResult Create(CreateStateviewmodel csvm)
+        public async  Task<IActionResult> Create(CreateStateviewmodel csvm)
         {
             var state = new State
             {
                 Name=csvm.StateName,
                 CountryId=csvm.CountryId
             };
-           _stateRepo.save(state);
+           await _stateRepo.save(state);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var state = _stateRepo.GetById(id);
-            var country = _icountryRepos.GetAll();
+            var state = await _stateRepo.GetById(id);
+            var country =await _icountryRepos.GetAll();
             EditStateviewmodel esvm = new EditStateviewmodel
             {
                 Id = state.Id,
@@ -63,7 +63,7 @@ namespace TechAgCompany.UI.Controllers
             return View(esvm);
         }
         [HttpPost]
-        public IActionResult Edit(EditStateviewmodel esvm)
+        public async Task<IActionResult> Edit(EditStateviewmodel esvm)
         {
             State state = new State
             {
@@ -71,19 +71,19 @@ namespace TechAgCompany.UI.Controllers
                 Name=esvm.StateName,
                 CountryId=esvm.CountryId
             };
-            _stateRepo.Edit(state);
+            await _stateRepo.Edit(state);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var Dstate =_stateRepo.GetById(id);
+            var Dstate =await _stateRepo.GetById(id);
             return View(Dstate);  
         }
         [HttpPost]
-        public IActionResult Delete(State state)
+        public async Task<IActionResult> Delete(State state)
         {
-            _stateRepo.RemoveData(state);
+            await _stateRepo.RemoveData(state);
             return RedirectToAction("Index");
         }
 

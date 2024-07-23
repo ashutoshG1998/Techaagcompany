@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,34 +19,35 @@ namespace TechAgCompany.Repository.Implementation
             _Context = context;
         }
 
-        public void Edit(Country country)
+        public async Task Edit(Country country)
         {
             _Context.countries.Update(country);
-            _Context.SaveChanges();
+           await _Context.SaveChangesAsync();
         }
 
-        public IEnumerable<Country> GetAll()
+        public  async Task<IEnumerable<Country>> GetAll()
         {
-            return _Context.countries.ToList();
+            var countries = await _Context.countries.ToListAsync();
+            return countries;
         }
 
-        public Country GetById(int id)
+        public async Task <Country> GetById(int id)
         {
             
-           return _Context.countries.Find(id);
+           return await _Context.countries.FindAsync(id);
 
         }
 
-        public void RemoveData(Country country)
+        public async Task RemoveData(Country country)
         {
            _Context.countries.Remove(country);
-            _Context.SaveChanges();
+            await _Context.SaveChangesAsync();
         }
 
-        public void save(Country country)
+        public async Task save(Country country)
         {
            _Context.countries.Add(country);
-            _Context.SaveChanges();
+            await _Context.SaveChangesAsync();
         }
     }
 }
