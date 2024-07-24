@@ -35,10 +35,6 @@ namespace TechAgCompany.UI.Migrations
                     b.Property<int>("StateId")
                         .HasColumnType("int");
 
-                    b.Property<string>("StateName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("StateId");
@@ -85,13 +81,36 @@ namespace TechAgCompany.UI.Migrations
                     b.ToTable("states");
                 });
 
+            modelBuilder.Entity("TechAgCompany.Entities.userInfo", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("userInfos");
+                });
+
             modelBuilder.Entity("TechAgCompany.Entities.City", b =>
                 {
-                    b.HasOne("TechAgCompany.Entities.State", null)
+                    b.HasOne("TechAgCompany.Entities.State", "StateName")
                         .WithMany("Citys")
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("StateName");
                 });
 
             modelBuilder.Entity("TechAgCompany.Entities.State", b =>
