@@ -14,16 +14,21 @@ namespace TechAgCompany.UI.Controllers
             _icountryRepos = icountryRepos;
         }
 
+       
         public async Task <IActionResult> Index()
         {
-            List<CountryViewModel> cvm = new List<CountryViewModel>();
-            var countries = await _icountryRepos.GetAll();
-
-            foreach (var country in countries)
+            if (HttpContext.Session.GetInt32("userId") != null)
             {
-                cvm.Add(new CountryViewModel { Id = country.Id, Name = country.Name });
+                List<CountryViewModel> cvm = new List<CountryViewModel>();
+                var countries = await _icountryRepos.GetAll();
+
+                foreach (var country in countries)
+                {
+                    cvm.Add(new CountryViewModel { Id = country.Id, Name = country.Name });
+                }
+                return View(cvm);
             }
-            return View(cvm);
+            return RedirectToAction("Login", "Auth");
         }
         [HttpGet]
         public async Task<IActionResult> Create()

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using TechAgCompany.Entities;
 using TechAgCompany.Repository.Implementation;
 using TechAgCompany.Repository.Interfaces;
 
@@ -12,6 +13,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddScoped<IcountryRepos, CountryRepo>();
 builder.Services.AddScoped<IStateRepo, StateRepo>();
 builder.Services.AddScoped<ICityRepos, CityRepos>();
+builder.Services.AddScoped<IUserinfo, Userinfo>();
+builder.Services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
+builder.Services.AddSession(option =>
+{
+    option.IdleTimeout= TimeSpan.FromMinutes(10);
+    option.Cookie.HttpOnly=true;
+}
+
+);
 
 var app = builder.Build();
 
@@ -30,7 +40,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();
