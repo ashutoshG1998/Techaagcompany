@@ -2,31 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
-/Techaagcompany.web/bin/Debug/net7.0
-/Techaagcompany.web/obj/Debug/net7.0
-/TechAgCompany.Entities/obj/Debug/net7.0
-/TechAgCompany.Entities/bin/Debug/net7.0
-/TechAgCompany.Repository/bin/Debug/net7.0
-/TechAgCompany.UI/bin/Debug/net7.0
-/TechAgCompany.UI/obj/Debug/net7.0
-/TechAgCompany.Repository/obj/Debug/net7.0
-/Techaagcompany.web/obj/Release/net7.0
-/TechAgCompany.Entities/obj/Release/net7.0
-/TechAgCompany.Repository/obj/Release/net7.0
-/TechAgCompany.UI/obj/Release/net7.0
-/TechAsgCompany.Conertbooking.Entities/obj/debug/net7.0
-/Techaagcompany/TechAsgCompany.Conertbooking.Entities/bin
-/Concertbooking.repositry/obj/Debug/net7.0
-/Concertbooking.repositry/bin/Debug/net7.0
-/Concertbooking.repositry/obj
-/ConcertBooking.WebHost/bin/Debug/net7.0
-/ConcertBooking.WebHost/obj/Debug/net7.0
-/ConcertBooking.WebHost/obj/Release/net7.0
-/TechAsgCompany.Conertbooking.Entities/bin/Debug/net7.0/Conertbooking.Entities.dll
-/TechAsgCompany.Conertbooking.Entities/bin/Debug/net7.0/Conertbooking.Entities.pdb
-/TechAsgCompany.Conertbooking.Entities/obj/Release/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
-## Ignore Visual Studio temporary files, build results, and
 ## common output folders
 [Dd]ebug/
 [Rr]elease/

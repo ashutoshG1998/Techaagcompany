@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8pZHwvVU55Q=",
+  "dgSpecHash": "HvzFaVOZG8w=",
   "success": true,
   "projectFilePath": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj",
   "expectedPackageFiles": [
@@ -77,9 +77,9 @@
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.diasymreader\\1.4.0\\microsoft.diasymreader.1.4.0.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\7.0.12\\microsoft.dotnet.scaffolding.shared.7.0.12.nupkg.sha512",
-    "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.20\\microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
-    "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.20\\microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
-    "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.20\\microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512",
+    "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.19\\microsoft.entityframeworkcore.7.0.19.nupkg.sha512",
+    "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.19\\microsoft.entityframeworkcore.abstractions.7.0.19.nupkg.sha512",
+    "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.19\\microsoft.entityframeworkcore.analyzers.7.0.19.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.19\\microsoft.entityframeworkcore.design.7.0.19.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.19\\microsoft.entityframeworkcore.relational.7.0.19.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.19\\microsoft.entityframeworkcore.sqlserver.7.0.19.nupkg.sha512",
@@ -229,16 +229,5 @@
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Microsoft.AspNetCore.Http.Features 5.0.17 depends on System.IO.Pipelines (>= 5.0.2) but System.IO.Pipelines 5.0.2 was not found. An approximate best match of System.IO.Pipelines 6.0.3 was resolved.",
-      "libraryId": "System.IO.Pipelines",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

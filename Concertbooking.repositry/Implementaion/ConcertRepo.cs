@@ -32,7 +32,7 @@ namespace Concertbooking.repositry.Implementaion
 
         public async Task<concert> GetById(int id)
         {
-           return await _context.concerts.FirstOrDefaultAsync(x=>x.Id==id);
+           return await _context.concerts.Include(x=>x.Artist).Include(y=>y.Venue).FirstOrDefaultAsync(x=>x.Id==id);
         }
 
         public async Task RemoveData(concert concert)
