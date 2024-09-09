@@ -58,6 +58,8 @@ namespace ConcertBooking.WebHost.Controllers
             return View(vm);
         }
 
+        
+
         public async Task<IActionResult> AvailabelTickets(int id)
         {
             var concert =  await _concertRepo.GetById(id);
@@ -67,8 +69,14 @@ namespace ConcertBooking.WebHost.Controllers
             }
             var allSeats = Enumerable.Range(1, concert.Venue.seatCapacity).ToList();
             var bookTickets = await _ticketRepo.GetBookedTicket(concert.Id);
-            var Availabel=allSeats.Except(bookTickets).ToList();
-            return View();            
+            var AvailabelSeats=allSeats.Except(bookTickets).ToList();
+            var Viewmodel = new AvailabelTicketviewmodel
+            {
+                ConcertId = concert.Id,
+                ConcertName = concert.Name,
+                AvailableSeats = AvailabelSeats
+            };
+            return View(Viewmodel);            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
