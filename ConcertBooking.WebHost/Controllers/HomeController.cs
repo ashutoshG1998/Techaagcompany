@@ -78,6 +78,12 @@ namespace ConcertBooking.WebHost.Controllers
             };
             return View(Viewmodel);            
         }
+        public async Task<IActionResult> BookTickets(int ConcertId,List<int> selectedSeats)
+        {
+            return View();
+        }
+       
+            
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

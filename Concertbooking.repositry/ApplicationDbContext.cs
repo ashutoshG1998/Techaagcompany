@@ -1,11 +1,13 @@
 ﻿
 using Conertbooking.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using TechAsgCompany.Conertbooking.Entities;
 
 namespace TechAsgCompany.Conertbooking.repository
 {
-    public class ApplicationDbContext : DbContext
+    //IdentityDb contect are asscociate with Identity user
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
