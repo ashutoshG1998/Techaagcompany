@@ -12,10 +12,7 @@ namespace Conertbooking.Entities
         public int TicketId { get; set; }
         public int SeatNumber { get; set; }
         public bool IsBooked { get; set; }
-        public int ConcertId { get; set; }
-
-        public concert concert { get; set; }
-
+      
         public int? BookingId {  get; set; }
         public Booking booking { get; set; }
 

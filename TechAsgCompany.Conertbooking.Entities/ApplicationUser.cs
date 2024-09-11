@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 //Registe : IdentityUser Class - Id(Guid) ,username,Password,Email,Phone
 //SignInManager -Check user signin, User Signin
 //UserManger :Store user data in database,get user information from database
+//claims:Piece of information about user,Addhar card
+//ClaimsIdentity =List<Claim>
 
 namespace Conertbooking.Entities
 {

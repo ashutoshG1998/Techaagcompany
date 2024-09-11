@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Concertbooking.repositry.Interfaces
 {
-    public interface ITicketRepo
+    public interface IbookingRepo
     {
-        Task<IEnumerable<int>> GetBookedTicket(int concertId);
-        Task<IEnumerable<Booking>> GetBookings(string UserId);
 
+        Task AddBooking(Booking booking);
     }
 }
