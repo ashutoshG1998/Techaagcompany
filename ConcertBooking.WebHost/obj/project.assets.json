@@ -4046,13 +4046,25 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "ConcertBooking.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ConcertBooking.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConcertBooking.Infrastructure.dll": {}
+        }
+      },
       "Concertbooking.repositry/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "ConcertBooking.Infrastructure": "1.0.0",
           "Conertbooking.Entities": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.19",
+          "Microsoft.AspNetCore.Identity.UI": "7.0.20",
           "Microsoft.EntityFrameworkCore": "7.0.19"
         },
         "compile": {
@@ -11759,6 +11771,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "ConcertBooking.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ConcertBooking.Infrastructure/ConcertBooking.Infrastructure.csproj",
+      "msbuildProject": "../ConcertBooking.Infrastructure/ConcertBooking.Infrastructure.csproj"
     },
     "Concertbooking.repositry/1.0.0": {
       "type": "project",

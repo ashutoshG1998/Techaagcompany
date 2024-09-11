@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 //and authorization(Access Rights)
 //Registe : IdentityUser Class - Id(Guid) ,username,Password,Email,Phone
 //SignInManager -Check user signin, User Signin
+//UserManger :Store user data in database,get user information from database
 
 namespace Conertbooking.Entities
 {
