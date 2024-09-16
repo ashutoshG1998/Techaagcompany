@@ -1,5 +1,6 @@
 ﻿using Concertbooking.repositry.Interfaces;
 using ConcertBooking.WebHost.ViewModel.TicketViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -8,6 +9,12 @@ namespace ConcertBooking.WebHost.Controllers
     public class TicketController : Controller
     {
         private ITicketRepo _Ticketrepo;
+
+        public TicketController(ITicketRepo ticketrepo)
+        {
+            _Ticketrepo = ticketrepo;
+        }
+        [Authorize]
         public async  Task<IActionResult> MyTicket()
         {
             var claimsidentity = (ClaimsIdentity)User.Identity;

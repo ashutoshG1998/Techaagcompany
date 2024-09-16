@@ -20,3 +20,46 @@ html {
 body {
   margin-bottom: 60px;
 }
+@media print{
+
+    body * {
+        visibility:hidden;
+
+    }
+    .print-section, .print-section *{
+        visibility:visible
+    }.card-footer{
+         display:none;
+     }
+     .print-section{
+         position:absolute;
+         left:0;
+         top:0;
+         width:100%;
+     }
+    @media print {
+        /* Hide all elements initially */
+        body * {
+            visibility: hidden;
+        }
+
+        /* Show only the elements within the print-section */
+        .print-section, .print-section * {
+            visibility: visible;
+        }
+
+        /* Hide footer during printing */
+        .card-footer {
+            display: none;
+        }
+
+        /* Ensure print-section is positioned correctly */
+        .print-section {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+}

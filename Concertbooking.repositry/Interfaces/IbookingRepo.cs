@@ -11,5 +11,7 @@ namespace Concertbooking.repositry.Interfaces
     {
 
         Task AddBooking(Booking booking);
+
+        Task<IEnumerable<Booking>> GetAll(int ConcerId);
     }
 }

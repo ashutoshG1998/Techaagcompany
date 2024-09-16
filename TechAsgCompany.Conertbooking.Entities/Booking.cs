@@ -14,6 +14,8 @@ namespace Conertbooking.Entities
         public int ConcertId { get; set; }
         public concert concert { get; set; }
         public string UserId {  get; set; }
+
+        public ApplicationUser User { get; set; }
         public ICollection<Ticket> Tickets {  get; set; }=new List<Ticket>();
     }
 }

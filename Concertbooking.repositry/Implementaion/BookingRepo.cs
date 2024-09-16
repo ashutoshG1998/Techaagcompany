@@ -1,5 +1,6 @@
 ﻿using Concertbooking.repositry.Interfaces;
 using Conertbooking.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,14 @@ namespace Concertbooking.repositry.Implementaion
         {
             await _context.Bookings.AddAsync(booking);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Booking>> GetAll(int ConcerId)
+        {
+            var booking = await _context.Bookings.Include(b => b.Tickets)
+                .Include(d=>d.concert)
+                .Include(c => c.User).Where(a => a.ConcertId == ConcerId).ToListAsync();
+                return booking;
         }
     }
 }

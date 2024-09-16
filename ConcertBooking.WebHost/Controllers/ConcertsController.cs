@@ -13,13 +13,15 @@ namespace ConcertBooking.WebHost.Controllers
         private readonly IArtistRepo _artistRepo;
         private readonly IutilityRepo _utilityRepo;
         private readonly IVenveRepo _venveRepo;
+        private readonly IbookingRepo _bookingRepo;
         private string containername = "ConcertImage";
-        public ConcertsController(IConcertRepo iconRepo, IArtistRepo artistRepo, IutilityRepo utilityRepo, IVenveRepo venveRepo)
+        public ConcertsController(IConcertRepo iconRepo, IArtistRepo artistRepo, IutilityRepo utilityRepo, IVenveRepo venveRepo, IbookingRepo bookingRepo)
         {
             _conRepo = iconRepo;
-            _artistRepo = artistRepo;          
+            _artistRepo = artistRepo;
             _utilityRepo = utilityRepo;
             _venveRepo = venveRepo;
+            _bookingRepo = bookingRepo;
         }
         public async Task<IActionResult> Index()
         {
@@ -110,6 +112,19 @@ namespace ConcertBooking.WebHost.Controllers
             var concert = await _conRepo.GetById(id);
             await _conRepo.RemoveData(concert);
             return View(concert);
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetTickets(int  id)
+        {
+            var booings = await _bookingRepo.GetAll(id);
+            var vm=booings.Select(b=> new DasdsBoardViewModel
+            {
+                UserName=b.User.UserName,
+                ComcertName=b.concert.Name,
+                SeatNumber=string.Join(",",b.Tickets.Select(t=>t.SeatNumber))
+            } ).ToList();
+            return View(vm);
+
         }
         
 
