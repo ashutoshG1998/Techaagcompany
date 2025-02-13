@@ -28,15 +28,11 @@ namespace TechAgCompany.UI.Controllers
             return View(cvm);
         }
     
-           
-        
         [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
-
-   
 
         [HttpPost]
         public async Task<IActionResult> Create(CreateSkillViewModel vm)

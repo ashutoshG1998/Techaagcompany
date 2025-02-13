@@ -15,6 +15,7 @@ builder.Services.AddScoped<IStateRepo, StateRepo>();
 builder.Services.AddScoped<ICityRepos, CityRepos>();
 builder.Services.AddScoped<IUserinfo, Userinfo>();
 builder.Services.AddScoped<ISkillRepo, SkillRepo>();
+builder.Services.AddScoped<IstudentRepo, StudentRepo>();
 builder.Services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
 builder.Services.AddSession(option =>
 {
