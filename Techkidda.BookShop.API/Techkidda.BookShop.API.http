@@ -1,0 +1,6 @@
+@Techkidda.BookShop.API_HostAddress = http://localhost:5142
+
+GET {{Techkidda.BookShop.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
