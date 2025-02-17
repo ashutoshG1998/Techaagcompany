@@ -22,7 +22,6 @@
   <ItemGroup>
     <Folder Include="Fillters\" />
     <Folder Include="Helpers\" />
-    <Folder Include="DTOs\" />
   </ItemGroup>
 
 </Project>
