@@ -10,6 +10,7 @@ namespace Techkidda.BookShop.API.Mappers
         {
             CreateMap<Category, CategoryDTO>();
             CreateMap<CategoryCreationDTO, Category>();
+            CreateMap<Author, AuthoreDto>();
                 
                 
                 }
