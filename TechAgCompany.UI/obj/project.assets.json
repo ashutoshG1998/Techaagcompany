@@ -11371,11 +11371,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAgCompany.UI\\TechAgCompany.UI.csproj",
+      "projectUniqueName": "D:\\Demo\\new\\Techaagcompany\\TechAgCompany.UI\\TechAgCompany.UI.csproj",
       "projectName": "TechAgCompany.UI",
-      "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAgCompany.UI\\TechAgCompany.UI.csproj",
+      "projectPath": "D:\\Demo\\new\\Techaagcompany\\TechAgCompany.UI\\TechAgCompany.UI.csproj",
       "packagesPath": "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\",
-      "outputPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAgCompany.UI\\obj\\",
+      "outputPath": "D:\\Demo\\new\\Techaagcompany\\TechAgCompany.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ashutosh.gourshete\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11393,8 +11393,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Demo\\TechKidda\\Techaagcompany\\TechAgCompany.Repository\\TechAgCompany.Repository.csproj": {
-              "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAgCompany.Repository\\TechAgCompany.Repository.csproj"
+            "D:\\Demo\\new\\Techaagcompany\\TechAgCompany.Repository\\TechAgCompany.Repository.csproj": {
+              "projectPath": "D:\\Demo\\new\\Techaagcompany\\TechAgCompany.Repository\\TechAgCompany.Repository.csproj"
             }
           }
         }
@@ -11450,14 +11450,10 @@
   },
   "logs": [
     {
-      "code": "NU1603",
+      "code": "NU1900",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Microsoft.AspNetCore.Http.Features 5.0.17 depends on System.IO.Pipelines (>= 5.0.2) but System.IO.Pipelines 5.0.2 was not found. An approximate best match of System.IO.Pipelines 6.0.3 was resolved.",
-      "libraryId": "System.IO.Pipelines",
-      "targetGraphs": [
-        "net7.0"
-      ]
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

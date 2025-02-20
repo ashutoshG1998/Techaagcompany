@@ -11297,11 +11297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Demo\\TechKidda\\Techaagcompany\\Techaagcompany.web\\Techaagcompany.web.csproj",
+      "projectUniqueName": "D:\\Demo\\new\\Techaagcompany\\Techaagcompany.web\\Techaagcompany.web.csproj",
       "projectName": "Techaagcompany.web",
-      "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\Techaagcompany.web\\Techaagcompany.web.csproj",
+      "projectPath": "D:\\Demo\\new\\Techaagcompany\\Techaagcompany.web\\Techaagcompany.web.csproj",
       "packagesPath": "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\",
-      "outputPath": "D:\\Demo\\TechKidda\\Techaagcompany\\Techaagcompany.web\\obj\\",
+      "outputPath": "D:\\Demo\\new\\Techaagcompany\\Techaagcompany.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ashutosh.gourshete\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11373,5 +11373,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

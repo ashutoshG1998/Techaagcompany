@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ckyPYnc1mHM=",
+  "dgSpecHash": "vYictrKBQtk=",
   "success": true,
-  "projectFilePath": "D:\\Demo\\TechKidda\\Techaagcompany\\Techaagcompany.web\\Techaagcompany.web.csproj",
+  "projectFilePath": "D:\\Demo\\new\\Techaagcompany\\Techaagcompany.web\\Techaagcompany.web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -228,5 +228,12 @@
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

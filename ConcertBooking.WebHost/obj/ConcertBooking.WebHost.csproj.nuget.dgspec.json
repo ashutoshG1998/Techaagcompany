@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj": {}
+    "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj": {}
   },
   "projects": {
-    "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj": {
+    "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj",
         "projectName": "ConcertBooking.Infrastructure",
-        "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj",
+        "projectPath": "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\",
-        "outputPath": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.Infrastructure\\obj\\",
+        "outputPath": "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ashutosh.gourshete\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\Demo\\TechKidda\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj": {
+    "D:\\Demo\\new\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Demo\\TechKidda\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj",
+        "projectUniqueName": "D:\\Demo\\new\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj",
         "projectName": "Concertbooking.repositry",
-        "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj",
+        "projectPath": "D:\\Demo\\new\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj",
         "packagesPath": "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\",
-        "outputPath": "D:\\Demo\\TechKidda\\Techaagcompany\\Concertbooking.repositry\\obj\\",
+        "outputPath": "D:\\Demo\\new\\Techaagcompany\\Concertbooking.repositry\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ashutosh.gourshete\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,11 +90,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj": {
-                "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj"
+              "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj": {
+                "projectPath": "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.Infrastructure\\ConcertBooking.Infrastructure.csproj"
               },
-              "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {
-                "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj"
+              "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {
+                "projectPath": "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj"
               }
             }
           }
@@ -154,14 +154,14 @@
         }
       }
     },
-    "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj": {
+    "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj",
+        "projectUniqueName": "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj",
         "projectName": "ConcertBooking.WebHost",
-        "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj",
+        "projectPath": "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.WebHost\\ConcertBooking.WebHost.csproj",
         "packagesPath": "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\",
-        "outputPath": "D:\\Demo\\TechKidda\\Techaagcompany\\ConcertBooking.WebHost\\obj\\",
+        "outputPath": "D:\\Demo\\new\\Techaagcompany\\ConcertBooking.WebHost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ashutosh.gourshete\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -179,8 +179,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Demo\\TechKidda\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj": {
-                "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj"
+              "D:\\Demo\\new\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj": {
+                "projectPath": "D:\\Demo\\new\\Techaagcompany\\Concertbooking.repositry\\Concertbooking.repositry.csproj"
               }
             }
           }
@@ -246,14 +246,14 @@
         }
       }
     },
-    "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {
+    "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
+        "projectUniqueName": "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
         "projectName": "Conertbooking.Entities",
-        "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
+        "projectPath": "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
         "packagesPath": "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\",
-        "outputPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\obj\\",
+        "outputPath": "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ashutosh.gourshete\\AppData\\Roaming\\NuGet\\NuGet.Config",

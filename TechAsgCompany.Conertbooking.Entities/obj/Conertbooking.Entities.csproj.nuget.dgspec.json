@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {}
+    "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {}
   },
   "projects": {
-    "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {
+    "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
+        "projectUniqueName": "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
         "projectName": "Conertbooking.Entities",
-        "projectPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
+        "projectPath": "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\Conertbooking.Entities.csproj",
         "packagesPath": "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\",
-        "outputPath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\obj\\",
+        "outputPath": "D:\\Demo\\new\\Techaagcompany\\TechAsgCompany.Conertbooking.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ashutosh.gourshete\\AppData\\Roaming\\NuGet\\NuGet.Config",

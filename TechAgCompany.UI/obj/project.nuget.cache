@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0BJcnJcaWMo=",
+  "dgSpecHash": "YWVIKbMMRYk=",
   "success": true,
-  "projectFilePath": "D:\\Demo\\TechKidda\\Techaagcompany\\TechAgCompany.UI\\TechAgCompany.UI.csproj",
+  "projectFilePath": "D:\\Demo\\new\\Techaagcompany\\TechAgCompany.UI\\TechAgCompany.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ashutosh.gourshete\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -231,14 +231,10 @@
   ],
   "logs": [
     {
-      "code": "NU1603",
+      "code": "NU1900",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Microsoft.AspNetCore.Http.Features 5.0.17 depends on System.IO.Pipelines (>= 5.0.2) but System.IO.Pipelines 5.0.2 was not found. An approximate best match of System.IO.Pipelines 6.0.3 was resolved.",
-      "libraryId": "System.IO.Pipelines",
-      "targetGraphs": [
-        "net7.0"
-      ]
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }
