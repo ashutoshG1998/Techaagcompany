@@ -48,6 +48,7 @@ namespace Techkidda.BookShop.API.Controllers
             }).Take(10).ToListAsync();    
         }
 
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<AuthoreDto>> Get(int id)
         {
             var author=await _context.authors.FirstOrDefaultAsync(x => x.Id == id);

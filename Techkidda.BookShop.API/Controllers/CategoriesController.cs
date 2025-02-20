@@ -18,11 +18,13 @@ namespace Techkidda.BookShop.API.Controllers
             _context = context;
             _mapper = mapper;
         }
+        [HttpGet]
         public async Task<ActionResult<List<CategoryDTO>>> Get()
         {
             var categories = await _context.Categories.OrderBy(x => x.Name).ToListAsync();
             return _mapper.Map<List<CategoryDTO>>(categories);
         }
+        [HttpGet("{Id:int}")]
         public async Task<ActionResult<CategoryDTO>> Get(int Id)
         {
             var category = await _context.Categories.FirstOrDefaultAsync(x => x.Id == Id);
@@ -43,7 +45,7 @@ namespace Techkidda.BookShop.API.Controllers
             _context.SaveChanges();
             return NoContent();
         }
-        [HttpPut("{Id:int}")]
+        [HttpPut("{id:int}")]
         public async Task<ActionResult> put(int id, [FromBody] CategoryCreationDTO categoryCreationDTO)
         {
             var category = _mapper.Map<Category>(categoryCreationDTO);
